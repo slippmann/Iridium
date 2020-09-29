@@ -4,21 +4,21 @@
         "description": "Behavior pack for iridium.",
         "name": "Iridium Behavior Pack",
         "uuid": "7f1b3e10-fd55-11ea-adc1-0242ac120002",
-        "version": [ 0, 0, 1 ],
-        "min_engine_version": [ 1, 16, 20 ]
+        "version": [0, 1, 0],
+        "min_engine_version": [1, 16, 20]
     },
     "modules": [
         {
             "description": "Iridium behavior pack data.",
             "type": "data",
             "uuid": "7f1b402c-fd55-11ea-adc1-0242ac120002",
-            "version": [0, 0, 1]
+            "version": [0, 1, 0]
         }
     ],
     "dependencies": [
         {
             "uuid": "7f1b4126-fd55-11ea-adc1-0242ac120002",
-            "version": [0, 0, 1]
+            "version": [0, 1, 0]
         }
     ]
 }

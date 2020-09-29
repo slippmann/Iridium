@@ -4,15 +4,15 @@
         "description": "Resource pack for adding iridium gems.",
         "name": "Iridium Resource Pack",
         "uuid": "7f1b4126-fd55-11ea-adc1-0242ac120002",
-        "version": [0, 0, 1],
-        "min_engine_version": [ 1, 16, 20 ]
+        "version": [0, 1, 0],
+        "min_engine_version": [1, 16, 20]
     },
     "modules": [
         {
             "description": "Iridium resource pack",
             "type": "resources",
             "uuid": "7f1b41f8-fd55-11ea-adc1-0242ac120002",
-            "version": [0, 0, 1]
+            "version": [0, 1, 0]
         }
     ]
 }

@@ -29,6 +29,9 @@ Iridium Sword
 ### Structures
 Meteor Crater (Contains Iridium Ore and Iron Ore)
 
+## Note
+To use this addon, you will need to enable experimental gameplay in world settings.
+
 ## Problems
 1. Tools do not support all blocks yet (eg. pickaxe cannot break Block of Diamond)
 2. Tools do not take damage when used
