@@ -1,0 +1,11 @@
+{
+   "format_version": [ 0, 0, 1 ],
+   "iridium:iridium_block" : {
+      "sound" : "metal",
+      "textures" : "iridium_block"
+   },
+   "iridium:iridium_ore" : {
+      "sound" : "stone",
+      "textures" : "iridium_ore"
+   }
+}

@@ -1,0 +1,24 @@
+{
+   "resource_pack_name" : "iridium",
+   "texture_data" : {
+      "iridium:iridium_axe" : {
+         "textures" : "textures/items/iridium_axe"
+      },
+      "iridium:iridium_hoe" : {
+         "textures" : "textures/items/iridium_hoe"
+      },
+      "iridium:iridium_ingot" : {
+         "textures" : "textures/items/iridium_ingot"
+      },
+      "iridium:iridium_pickaxe" : {
+         "textures" : "textures/items/iridium_pickaxe"
+      },
+      "iridium:iridium_shovel" : {
+         "textures" : "textures/items/iridium_shovel"
+      },
+      "iridium:iridium_sword" : {
+         "textures" : "textures/items/iridium_sword"
+      }
+   },
+   "texture_name" : "atlas.items"
+}

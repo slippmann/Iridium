@@ -1,0 +1,12 @@
+{
+  "format_version": "1.16.20",
+  "minecraft:recipe_furnace": {
+      "description": {
+      "identifier": "iridium:furnace_iridium_ingot_recipe"
+    },
+    "tags": ["furnace", "blast_furnace"],
+    "input": "iridium:iridium_ore",
+    "output": "iridium:iridium_ingot"
+  }
+  
+}

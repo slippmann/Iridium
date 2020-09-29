@@ -1,0 +1,54 @@
+{
+  "format_version": "1.16.20",
+  "minecraft:ore_feature": {
+      "description": {
+      "identifier": "iridium_ore_feature"
+    },
+    "count": 3,
+    "places_block": "iridium:iridium_ore",
+    "may_replace": [
+      {
+        "name": "minecraft:stone",
+        "states": {
+          "stone_types": "andesite"
+        }
+      },
+      {
+        "name": "minecraft:stone",
+        "states": {
+          "stone_types": "andesite_smooth"
+        }
+      },
+      {
+        "name": "minecraft:stone",
+        "states": {
+          "stone_types": "diorite"
+        }
+      },
+      {
+        "name": "minecraft:stone",
+        "states": {
+          "stone_types": "diorite_smooth"
+        }
+      },
+      {
+        "name": "minecraft:stone",
+        "states": {
+          "stone_types": "granite"
+        }
+      },
+      {
+        "name": "minecraft:stone",
+        "states": {
+          "stone_types": "granite_smooth"
+        }
+      },
+      {
+        "name": "minecraft:stone",
+        "states": {
+          "stone_types": "stone"
+        }
+      }
+    ]
+  }
+}

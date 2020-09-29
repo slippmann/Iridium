@@ -1,0 +1,15 @@
+{
+  "format_version": "1.16.20",
+  "minecraft:structure_template_feature": {
+    "description": {
+      "identifier": "crater_feature"
+    },
+    "structure_name": "mystructure:crater",
+    "adjustment_radius": 8,
+    "facing_direction": "random",
+    "constraints": {
+      "grounded": {},
+      "unburied": {}
+    }
+  }
+}

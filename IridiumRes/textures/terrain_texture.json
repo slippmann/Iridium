@@ -1,0 +1,14 @@
+{
+   "num_mip_levels" : 4,
+   "padding" : 8,
+   "resource_pack_name" : "iridium",
+   "texture_data" : {
+      "iridium_ore" : {
+         "textures" : "textures/blocks/iridium_ore"
+      },
+      "iridium_block" : {
+         "textures" : "textures/blocks/iridium_block"
+      }
+   },
+   "texture_name" : "atlas.terrain"
+}

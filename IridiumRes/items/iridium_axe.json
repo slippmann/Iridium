@@ -1,0 +1,13 @@
+{
+  "format_version": "1.16.20",
+  "minecraft:item": {
+    "description": {
+      "identifier": "iridium:iridium_axe",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "iridium:iridium_axe",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

@@ -1,0 +1,334 @@
+{
+    "format_version": "1.11.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "minecraft:player",
+        "is_spawnable": false,
+        "is_summonable": false,
+        "is_experimental": false
+      },
+      "component_groups": {
+        "minecraft:normal_player": {
+          "minecraft:attack": {
+            "damage": 1
+          },
+          "minecraft:movement": {
+            "value": 0.1
+          },
+          "minecraft:underwater_movement": {
+            "value": 0.03
+          }
+        },
+        "iridium:iridium_sword_component_group": {
+          "minecraft:attack": {
+            "damage": 20
+          }
+        },
+        "iridium:iridium_axe_component_group": {
+          "minecraft:attack": {
+            "damage": 16
+          }
+        },
+        "iridium:iridium_pickaxe_component_group": {
+          "minecraft:attack": {
+            "damage": 12
+          }
+        },
+        "iridium:iridium_shovel_component_group": {
+          "minecraft:attack": {
+            "damage": 6
+          }
+        },
+        "iridium:iridium_hoe_component_group": {
+          "minecraft:attack": {
+            "damage": 4
+          }
+        }
+      },
+      "components": {
+        "minecraft:type_family": {
+          "family": [
+            "player"
+          ]
+        },
+        "minecraft:is_hidden_when_invisible": {},
+        "minecraft:scheduler": {
+          "scheduled_events": [
+          ]
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/empty.json"
+        },
+        "minecraft:collision_box": {
+          "width": 0.6,
+          "height": 1.8
+        },
+        "minecraft:can_climb": {},
+        "minecraft:player.saturation": {
+          "value": 20
+        },
+        "minecraft:player.exhaustion": {
+          "value": 0,
+          "max": 4
+        },
+        "minecraft:player.level": {
+          "value": 0,
+          "max": 24791
+        },
+        "minecraft:player.experience": {
+          "value": 0,
+          "max": 1
+        },
+        "minecraft:breathable": {
+          "totalSupply": 15,
+          "suffocateTime": -1,
+          "inhaleTime": 3.75,
+          "generatesBubbles": false
+        },
+        "minecraft:nameable": {
+          "alwaysShow": true,
+          "allowNameTagRenaming": false
+        },
+        "minecraft:physics": {},
+        "minecraft:insomnia": {
+          "days_until_insomnia": 3
+        },
+        "minecraft:rideable": {
+          "seat_count": 2,
+          "family_types": [
+            "parrot_tame"
+          ],
+          "pull_in_entities": true,
+          "seats": [
+            {
+              "position": [
+                0.4,
+                -0.15,
+                0.04
+              ],
+              "min_rider_count": 0,
+              "max_rider_count": 0,
+              "lock_rider_rotation": 0
+            },
+            {
+              "position": [
+                -0.4,
+                -0.15,
+                0.04
+              ],
+              "min_rider_count": 1,
+              "max_rider_count": 2,
+              "lock_rider_rotation": 0
+            }
+          ]
+        },
+        "minecraft:scaffolding_climber": {},
+        "minecraft:environment_sensor": [
+          {
+            "on_environment": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_mob_effect",
+                    "subject": "self",
+                    "value": "bad_omen"
+                  },
+                  {
+                    "test": "is_in_village",
+                    "subject": "self",
+                    "value": true
+                  }
+                ]
+              },
+              "event": "minecraft:trigger_raid"
+            }
+          },
+          {
+            "on_environment": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "self",
+                    "value": "player"
+                  }
+                ]
+              },
+              "event": "minecraft:event_normal_player"
+            }
+          },
+          {
+            "on_environment": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "self",
+                    "domain": "hand",
+                    "value": "iridium:iridium_sword"
+                  }
+                ]
+              },
+              "event": "iridium:iridium_sword_event"
+            }
+          },
+          {
+            "on_environment": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "self",
+                    "domain": "hand",
+                    "value": "iridium:iridium_axe"
+                  }
+                ]
+              },
+              "event": "iridium:iridium_axe_event"
+            }
+          },
+          {
+            "on_environment": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "self",
+                    "domain": "hand",
+                    "value": "iridium:iridium_pickaxe"
+                  }
+                ]
+              },
+              "event": "iridium:iridium_pickaxe_event"
+            }
+          },
+          {
+            "on_environment": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "self",
+                    "domain": "hand",
+                    "value": "iridium:iridium_shovel"
+                  }
+                ]
+              },
+              "event": "iridium:iridium_shovel_event"
+            }
+          },
+          {
+            "on_environment": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "self",
+                    "domain": "hand",
+                    "value": "iridium:iridium_hoe"
+                  }
+                ]
+              },
+              "event": "iridium:iridium_hoe_event"
+            }
+          }
+        ]
+      },
+      "events": {
+        "minecraft:event_normal_player": {
+          "add": {
+            "component_groups": [
+              "minecraft:normal_player"
+            ]
+          },
+          "remove": {
+            "component_groups": [
+              "iridium:iridium_sword_component_group",
+              "iridium:iridium_axe_component_group",
+              "iridium:iridium_pickaxe_component_group",
+              "iridium:iridium_shovel_component_group",
+              "iridium:iridium_hoe_component_group"
+             ]
+           }
+         },
+         "iridium:iridium_sword_event": {
+          "add": {
+            "component_groups": [
+              "iridium:iridium_sword_component_group"
+            ]
+          }
+        },
+         "iridium:iridium_axe_event": {
+          "add": {
+            "component_groups": [
+              "iridium:iridium_axe_component_group"
+            ]
+          }
+        },
+         "iridium:iridium_pickaxe_event": {
+          "add": {
+            "component_groups": [
+              "iridium:iridium_pickaxe_component_group"
+            ]
+          }
+        },
+         "iridium:iridium_shovel_event": {
+          "add": {
+            "component_groups": [
+              "iridium:iridium_shovel_component_group"
+            ]
+          }
+        },
+         "iridium:iridium_hoe_event": {
+          "add": {
+            "component_groups": [
+              "iridium:iridium_hoe_component_group"
+            ]
+          }
+        },
+        "minecraft:gain_bad_omen": {
+          "add": {
+            "component_groups": [
+              "minecraft:add_bad_omen"
+            ]
+          }
+        },
+        "minecraft:clear_add_bad_omen": {
+          "remove": {
+            "component_groups": [
+              "minecraft:add_bad_omen"
+            ]
+          },
+          "add": {
+            "component_groups": [
+              "minecraft:clear_bad_omen_spell_effect"
+            ]
+          }
+        },
+        "minecraft:trigger_raid": {
+          "add": {
+            "component_groups": [
+              "minecraft:raid_trigger"
+            ]
+          }
+        },
+        "minecraft:remove_raid_trigger": {
+          "remove": {
+            "component_groups": [
+              "minecraft:raid_trigger"
+            ]
+          }
+        },
+        "minecraft:entity_spawned": {
+          "remove": {
+            "component_groups": [
+              "minecraft:standard_player"
+            ]
+          }
+        }
+      }
+    }
+  }

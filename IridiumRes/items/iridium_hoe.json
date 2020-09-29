@@ -1,0 +1,13 @@
+{
+  "format_version": "1.16.20",
+  "minecraft:item": {
+    "description": {
+      "identifier": "iridium:iridium_hoe",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "iridium:iridium_hoe",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}
