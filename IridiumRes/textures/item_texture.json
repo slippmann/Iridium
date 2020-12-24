@@ -18,6 +18,12 @@
       },
       "iridium:iridium_sword" : {
          "textures" : "textures/items/iridium_sword"
+      },
+      "iridium:spawn_egg_moogloom" : {
+         "textures" : "textures/items/egg_moogloom"
+      },
+      "iridium:glowing_stew" : {
+         "textures" : "textures/items/glowing_stew"
       }
    },
    "texture_name" : "atlas.items"

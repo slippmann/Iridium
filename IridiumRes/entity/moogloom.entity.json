@@ -1,0 +1,30 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "iridium:moogloom",
+      "materials": { "default": "mooshroom" },
+      "textures": {
+        "default": "textures/entity/moogloom"
+      },
+      "geometry": {
+        "default": "geometry.mooshroom"
+      },
+      "animations": {
+        "setup": "animation.mooshroom.setup.v1.0",
+        "walk": "animation.quadruped.walk",
+        "look_at_target": "animation.common.look_at_target",
+        "baby_transform": "animation.mooshroom.baby_transform"
+      },
+      "animation_controllers": [
+        { "setup": "controller.animation.mooshroom.setup" },
+        { "move": "controller.animation.mooshroom.move" },
+        { "baby": "controller.animation.mooshroom.baby" }
+      ],
+      "render_controllers": [ "controller.render.mooshroom" ],
+      "spawn_egg": {
+        "texture": "iridium:spawn_egg_moogloom"
+      }
+    }
+  }
+}

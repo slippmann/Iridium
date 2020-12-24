@@ -7,3 +7,6 @@ item.iridium:iridium_shovel.name=Iridium Shovel
 
 tile.iridium:iridium_block.name=Block of Iridium
 tile.iridium:iridium_ore.name=Iridium Ore
+
+item.iridium:spawn_egg_moogloom.name=Moogloom Spawn Egg
+item.iridium:glowing_stew.name=Glowing Stew
